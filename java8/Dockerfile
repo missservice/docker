@@ -9,9 +9,9 @@ WORKDIR /app/
 COPY ${JAVA_VERSION} /app/
 
 #RUN yum update -y && \
-RUN yum install -y gcc vim initscripts libtool make gcc-c++ wget curl && \
-rpm -ivh /app/${JAVA_VERSION} && \
-rm -f /app/${JAVA_VERSION} && \
+#RUN yum install -y wget && \
+RUN rpm -ivh /app/${JAVA_VERSION} && \
+rm -rf /app/${JAVA_VERSION} && \
 rm -rf /var/cache/yum
 
 # Set environment variables.

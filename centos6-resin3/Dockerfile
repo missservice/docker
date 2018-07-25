@@ -1,5 +1,5 @@
 #From centos:version
-FROM java:8
+FROM misswuyang/centos6-java:8
 MAINTAINER wuyang wuyang@aiisen.com
 
 ENV RESIN_VERSION=resin-pro-3.1.13
