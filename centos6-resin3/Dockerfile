@@ -22,3 +22,4 @@ ENTRYPOINT ["/app/resin/bin/httpd.sh"]
 #docker build -t resin:3 .
 #docker run --name web8080 -d -p 8080:8080 resin:3
 #docker run --name web8080 -d -p 8080:8080 -v /Users/wuyang/Documents/work/docker/centos6-resin3/html:/app/www resin:3
+#docker run --name web8080 -d -p 8080:8080 -v /www/conf/resin.conf:/app/resin/conf/resin.conf -v /www/proj:/app/www resin:3
